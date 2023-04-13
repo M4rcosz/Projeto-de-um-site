@@ -1,0 +1,85 @@
+<!-- Interface de Login -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" ">
+    <meta name="author" content="Marcosz Paulo">
+    <!-- Título da Página -->
+    <title>Login Gênios da Bola</title>
+    <link rel="stylesheet" href="./estilização/styles.css">
+</head>
+<!-- "Pai" -->
+
+<body class="bodyCreatAccount">
+    <!-- Background do Site -->
+    <div id="FundoPrincipal">
+        <img src="/estilização/img/pexels-dom-le-roy-3991976.jpg" alt="fundo da página">
+    </div>
+    <!-- Imagem do Messi e do CR7 -->
+    <div id="Messi"></div>
+    <div id="CristianoRonaldo"></div>
+
+    <!-- InterfaceDoCrieSuaConta -->
+    <div id="caixaCrieSuaConta">
+        <div class="boxCreatAccBlur"></div>
+        <div id="boxTitle">
+            <h2>Gênios da Bola</h2>
+        </div>
+        <div class="boxCreatAccount">
+            <!-- Login -->
+            <div class="center">
+                <form action="" class="loginAccountForm">
+                    <h2 id="loginTitle" class="titleAccountLoginAndCreat">Login</h2>
+                    <div id="loginFieldset">
+                        <div class="divInputLabel">
+                            <label for="loginAccEmail" id="labelLoginEmail">Email:</label><br>
+                            <input type="email" name="loginAccEmail" id="loginEmail" placeholder="Email:">
+                            <p id="confimationMessage" class="redAlertMesssage"></p>
+                        </div>
+                        <div class="divInputLabel">
+                            <label for="loginAccPassword" id="labelLoginPassword">Senha:</label><br>
+                            <input type="password" name="loginAccPassword" id="loginPassword" placeholder="Senha:">
+                            <p id="confimationMessage" class="redAlertMesssage"></p>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button class="btn">Login</button>
+                    </div>
+
+                </form>
+            </div>
+            <!-- Criar Conta -->
+            <form action='' id="creatAccountForm">
+                <h2 id="creatAccTitle" class="titleAccountLoginAndCreat">Criar Conta</h2>
+                <label for="creatAccNickname">Nickname:</label>
+                <input type="text" name="createdNickname" id="creatAccNickname" placeholder="Nickname:">
+                <p id="confimationMessage" class="redAlertMesssage"></p>
+                <label for="creatAccName">Nome:</label>
+                <input type="text" name="createdName" id="creatAccName" placeholder="Nome:">
+                <p id="confimationMessage" class="redAlertMesssage"></p>
+                <label for="creatAccEmail">Email:</label>
+                <input type="email" name="createdEmail" id="creatAccEmail" placeholder="Email:">
+                <p id="confimationMessage" class="redAlertMesssage"></p>
+                <label for="creatAccPassword">Senha:</label>
+                <input type="password" name="createdPassword" id="creatAccPassword" placeholder="Senha:">
+                <p id="confimationMessage" class="redAlertMesssage"></p>
+                <label for="passwordConfirmation">Confirme sua senha:</label>
+                <input type="password" name="createdRePassword" id="passwordConfirmation"
+                    placeholder="Confirme sua senha:">
+                <p id="confimationMessage2" class="redAlertMesssage"></p>
+
+            </form>
+        </div>
+    </div>
+
+
+
+
+    <script src="/js/menu.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,254 @@
+ /* Interface de Login */
+ .bodyCreatAccount {
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+     background-color: black;
+ }
+
+ /* Background principal do site */
+ #FundoPrincipal img {
+     position: absolute;
+     width: 100vw;
+     height: 100vh;
+     filter: blur(4px);
+     box-sizing: border-box;
+ }
+
+ /* h1 do "Login" */
+ h1 {
+     color: rgb(26, 26, 26);
+     position: absolute;
+     font-family: "Poppins", Helvetica, Arial, sans-serif;
+     left: 50%;
+     bottom: -8px;
+     transform: translatex(-50%);
+     font-size: 35;
+     font-weight: bold;
+ }
+
+ /* Config dos Parágrafos */
+ p {
+     font-family: Arial, Helvetica, sans-serif;
+     color: white;
+ }
+
+
+
+ /* Imagem do Messi
+ #Messi {
+     width: 500px;
+     height: 455px;
+     background-image: url(./img/kisspng-lionel-messi-fc-barcelona-argentina-national-footb-lionel-messi-png-picture-5a772bf6634529.2951789315177594784066-removebg-preview.png);
+     position: absolute;
+     bottom: 0px;
+     left: 866px;
+
+ } */
+
+ /* Imagem do Cristiano Ronaldo
+ #CristianoRonaldo {
+     width: 400px;
+     height: 515px;
+     background-image: url(./img/Cristiano-Ronaldo-No-Background-removebg-preview.png);
+     background-size: cover;
+     position: absolute;
+     bottom: 0px;
+     left: 40px;
+ } */
+
+ /* Interface Do Login(CAIXA) */
+ #caixaCrieSuaConta {
+
+     width: 500px;
+     height: 100%;
+     background-image: linear-gradient(to top, rgb(180, 180, 180), rgb(255, 255, 255), rgb(241, 229, 229));
+     position: absolute;
+     border: 4px solid black;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     box-sizing: border-box;
+
+ }
+
+ #boxTitle {
+     width: 100%;
+     height: 100px;
+     background-image: linear-gradient(to top, rgb(0, 233, 0), rgb(2, 187, 2), green);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 0px 0 30px 30px;
+     border: 4px solid rgb(0, 0, 0);
+     box-sizing: border-box;
+     box-shadow: 0px 5px 10px 0px rgba(9, 255, 0, 0.7);
+ }
+
+ #boxTitle h2 {
+     color: rgb(0, 0, 0);
+     text-shadow: 2px 2px 2px rgb(255, 255, 255);
+     position: absolute;
+     font-family: Arial, Helvetica, sans-serif;
+     text-align: center;
+     font-size: 40px;
+ }
+
+ h2.titleAccountLoginAndCreat {
+     color: rgb(0, 0, 0);
+     text-shadow: 2px 2px 2px rgb(255, 255, 255);
+     font-family: Arial, Helvetica, sans-serif;
+     text-align: center;
+     font-size: 30px;
+ }
+
+ /* Login */
+ .center {
+     display: flex;
+     justify-content: center;
+ }
+
+ h2#loginTitle {
+     display: flex;
+     justify-content: center;
+ }
+
+ .loginAccountForm {
+     background-color: black;
+     border-radius: 50px;
+     width: 300px;
+     height: 330px;
+     border: 3px solid green;
+     box-sizing: border-box;
+ }
+
+ #loginFieldset {
+     margin-left: 40px;
+ }
+
+
+
+ #loginEmail {
+     width: 200px;
+     height: 15px;
+     display: inline-block;
+ }
+
+ #loginPassword {
+     width: 200px;
+     height: 15px;
+     display: inline-block;
+
+
+ }
+
+ .button {
+     display: flex;
+     justify-content: center;
+
+ }
+
+ .button button {
+     background-image: linear-gradient(to top, rgb(0, 233, 0), rgb(2, 187, 2), green);
+     border-radius: 20px;
+     margin-top: 20px;
+     padding: 5px 40px;
+     border: 4px solid black;
+     box-shadow: 0 1px 8px 3px rgb(0, 0, 0), inset 0 1px 8px 3px rgb(11, 95, 0);
+     box-sizing: border-box;
+ }
+
+ .button button:hover {
+     background-image: linear-gradient(to top, rgb(0, 82, 0), rgb(0, 100, 0), rgb(0, 65, 0));
+     color: white;
+ }
+
+
+
+
+ /* Criar conta */
+ h2#creatAccTitle {
+     display: flex;
+     justify-content: center;
+ }
+
+ .boxCreatAccount label {
+     color: black;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 30px;
+     margin-left: 5px;
+     text-shadow: 1px 2px 5px rgb(0, 199, 0), 1px 2px 0px rgba(0, 100, 0, 0.822);
+
+ }
+
+ .boxCreatAccount input {
+     padding: 4px 3px 4px 7px;
+     border-radius: 20px;
+     width: 375px;
+     height: 17px;
+     border: 3px solid rgb(0, 63, 8);
+     box-shadow: 0 3px 10px 5px lightgreen;
+     margin-top: 4px;
+
+ }
+
+ .boxCreatAccount input:hover {
+     background-color: rgba(128, 128, 128, 0.212);
+ }
+
+
+ .boxCreatAccount {
+     margin: 10px 50px 10px 25px;
+     position: relative;
+
+
+ }
+
+ /* .helpIcon {
+     width: 20px;
+     height: 20px;
+     background-color: white;
+     position: absolute;
+     left: 50%;
+     bottom: -60px;
+     border-radius: 20px;
+     border: 3px solid black;
+ } */
+
+ .button1 {
+     background-image: linear-gradient(to top, rgb(0, 233, 0), rgb(2, 187, 2), green);
+     border-radius: 20px;
+     margin-top: 20px;
+     padding: 5px 40px;
+     border: 4px solid black;
+     box-shadow: 0 1px 8px 3px rgb(0, 0, 0), inset 0 1px 8px 3px rgb(11, 95, 0);
+     box-sizing: border-box;
+ }
+
+ .button1 a {
+     color: rgb(243, 243, 243);
+     text-decoration: none;
+     text-shadow: 1px 2px 1px black;
+     width: 100%;
+     border-radius: 20px;
+     font-family: Arial, Helvetica, sans-serif;
+     box-sizing: border-box;
+
+ }
+
+ .button1 a:hover {
+     color: black;
+     background-image: linear-gradient(to top, rgb(0, 180, 0), rgb(0, 170, 0), rgb(0, 194, 0));
+     box-shadow: inset 0 1px 8px 3px rgb(11, 95, 0);
+     text-shadow: 1px 1px 1px rgb(0, 0, 0);
+ }
+
+ #creatAccButtonDiv {
+     display: flex;
+     justify-content: center;
+ }
+
+ .redAlertMesssage {
+     color: red;
+     text-shadow: 1px 1px 1px black;
+ }
