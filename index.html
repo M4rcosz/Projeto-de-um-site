@@ -30,22 +30,49 @@
             <h2>Gênios da Bola</h2>
         </div>
         <div class="boxCreatAccount">
+            <!-- Choice Buttons Login/Creat Account -->
+            <div id="choiceButtonLogin" class="choiceButtonsLoginAndCreatAcc" onclick="choiceButtonLogin()">
+                <h2>Login</h2>
+            </div>
+            <div id="choiceButtonsLoginAndCreatAccId" class="choiceButtonsLoginAndCreatAcc"
+                onclick="choiceButtonCreatAcc()">
+                <h2>Criar Conta</h2>
+            </div>
+            <!-- Initial Card -->
+            <div class="center">
+                <div id="initialCardInfo" class="cardFormSet">
+                    <h2>Gênios da Bola</h2>
+                    <p>Este site foi criado com a ideia de promover uma comunicação entre seus usuários sobre futebol, e
+                        ao mesmo provindenciar uma forma fácil de encontrar as estatísticas e notícias de seus jogadores
+                        e times favoritos.</p>
+                    <h3>Créditos</h3>
+                    <p>Criador:Marcos Paulo</p>
+                    <p>Redes Sociais e outros:</p>
+                    <p>GitHub:</p>
+                    <p>Instagram:</p>
+                    <p id="clientInfo">Este site foi criado com base na ideia de um cliente.</p>
+                </div>
+            </div>
             <!-- Login -->
             <div class="center">
-                <form action="" class="loginAccountForm">
-                    <h2 id="loginTitle" class="titleAccountLoginAndCreat">Login</h2>
-                    <div id="loginFieldset">
-                        <div class="divInputLabel">
-                            <label for="loginAccEmail" id="labelLoginEmail">Email:</label><br>
-                            <input type="email" name="loginAccEmail" id="loginEmail" placeholder="Email:">
+                <form action="" id="loginForm" class="cardFormSet">
+                    <!-- Title -->
+                    <h2 id="" class="cardTitle">Login</h2>
+                    <div class="centerItemsCard">
+                        <!-- Email -->
+                        <div class="">
+                            <label for="" id="">Email:</label><br>
+                            <input type="email" name="loginAccEmail" id="" placeholder="Email:">
                             <p id="confimationMessage" class="redAlertMesssage"></p>
                         </div>
-                        <div class="divInputLabel">
-                            <label for="loginAccPassword" id="labelLoginPassword">Senha:</label><br>
-                            <input type="password" name="loginAccPassword" id="loginPassword" placeholder="Senha:">
+                        <!-- Password -->
+                        <div class="">
+                            <label for="" id="">Senha:</label><br>
+                            <input type="password" name="loginAccPassword" id="" placeholder="Senha:">
                             <p id="confimationMessage" class="redAlertMesssage"></p>
                         </div>
                     </div>
+                    <!-- Button -->
                     <div class="button">
                         <button class="btn">Login</button>
                     </div>
@@ -53,26 +80,49 @@
                 </form>
             </div>
             <!-- Criar Conta -->
-            <form action='' id="creatAccountForm">
-                <h2 id="creatAccTitle" class="titleAccountLoginAndCreat">Criar Conta</h2>
-                <label for="creatAccNickname">Nickname:</label>
-                <input type="text" name="createdNickname" id="creatAccNickname" placeholder="Nickname:">
-                <p id="confimationMessage" class="redAlertMesssage"></p>
-                <label for="creatAccName">Nome:</label>
-                <input type="text" name="createdName" id="creatAccName" placeholder="Nome:">
-                <p id="confimationMessage" class="redAlertMesssage"></p>
-                <label for="creatAccEmail">Email:</label>
-                <input type="email" name="createdEmail" id="creatAccEmail" placeholder="Email:">
-                <p id="confimationMessage" class="redAlertMesssage"></p>
-                <label for="creatAccPassword">Senha:</label>
-                <input type="password" name="createdPassword" id="creatAccPassword" placeholder="Senha:">
-                <p id="confimationMessage" class="redAlertMesssage"></p>
-                <label for="passwordConfirmation">Confirme sua senha:</label>
-                <input type="password" name="createdRePassword" id="passwordConfirmation"
-                    placeholder="Confirme sua senha:">
-                <p id="confimationMessage2" class="redAlertMesssage"></p>
+            <div class="center">
+                <form action="" id="creatAccForm" class="cardFormSet">
+                    <!-- Title -->
+                    <h2 id="" class="cardTitle">Criar Conta</h2>
+                    <div class="centerItemsCard">
+                        <!-- Nickname -->
+                        <div class="">
+                            <label for="" id="">Nickname:</label><br>
+                            <input type="text" name="loginAccEmail" id="" placeholder="Nickname:">
+                            <p id="confimationMessage" class="redAlertMesssage"></p>
+                        </div>
+                        <!-- Name -->
+                        <div class="">
+                            <label for="" id="">Nome:</label><br>
+                            <input type="text" name="loginAccEmail" id="" placeholder="Nome:">
+                            <p id="confimationMessage" class="redAlertMesssage"></p>
+                        </div>
+                        <!-- Email -->
+                        <div class="">
+                            <label for="" id="">Email:</label><br>
+                            <input type="email" name="loginAccEmail" id="" placeholder="Email:">
+                            <p id="confimationMessage" class="redAlertMesssage"></p>
+                        </div>
+                        <!-- Password -->
+                        <div class="">
+                            <label for="" id="">Senha:</label><br>
+                            <input type="password" name="loginAccEmail" id="" placeholder="Senha:">
+                            <p id="confimationMessage" class="redAlertMesssage"></p>
+                        </div>
+                        <!-- Password Confirmation -->
+                        <div class="">
+                            <label for="" id="">Confirme a senha:</label><br>
+                            <input type="password" name="loginAccPassword" id="" placeholder="Confirme sua senha:">
+                            <p id="confimationMessage" class="redAlertMesssage"></p>
+                        </div>
+                    </div>
+                    <!-- Button -->
+                    <div class="button">
+                        <button class="btn">Criar Conta</button>
+                    </div>
 
-            </form>
+                </form>
+            </div>
         </div>
     </div>
 

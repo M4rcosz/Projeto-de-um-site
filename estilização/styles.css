@@ -78,11 +78,9 @@
      background-image: linear-gradient(to top, rgb(0, 233, 0), rgb(2, 187, 2), green);
      display: flex;
      justify-content: center;
+     border-bottom: 4px solid black;
      align-items: center;
-     border-radius: 0px 0 30px 30px;
-     border: 4px solid rgb(0, 0, 0);
      box-sizing: border-box;
-     box-shadow: 0px 5px 10px 0px rgba(9, 255, 0, 0.7);
  }
 
  #boxTitle h2 {
@@ -102,46 +100,76 @@
      font-size: 30px;
  }
 
- /* Login */
+ /* Choice Buttons Login And Creat Acc */
+ .choiceButtonsLoginAndCreatAcc {
+     background-color: black;
+     width: 50%;
+     height: 85px;
+     display: flex;
+     border: 5px solid white;
+     border-bottom: 0px;
+     border-radius: 50px;
+     box-sizing: border-box;
+     box-shadow: inset 0px 0px 0px 3px rgb(0, 255, 0);
+     justify-content: center;
+     align-items: center;
+     cursor: pointer;
+
+ }
+
+ .choiceButtonsLoginAndCreatAcc h2 {
+     color: white;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 25px;
+     margin-left: 5px;
+     text-shadow: 1px 2px 5px rgb(0, 199, 0), 1px 2px 0px rgba(0, 100, 0, 0.822);
+
+
+ }
+
+ #choiceButtonLogin {
+     display: flex;
+     float: left;
+     border-right: 0;
+ }
+
+ /* Pág Class - Start */
  .center {
      display: flex;
      justify-content: center;
  }
 
- h2#loginTitle {
-     display: flex;
-     justify-content: center;
- }
-
- .loginAccountForm {
-     background-color: black;
-     border-radius: 50px;
-     width: 300px;
-     height: 330px;
-     border: 3px solid green;
-     box-sizing: border-box;
- }
-
- #loginFieldset {
+ .centerItemsCard {
      margin-left: 40px;
  }
 
-
-
- #loginEmail {
-     width: 200px;
-     height: 15px;
-     display: inline-block;
- }
-
- #loginPassword {
-     width: 200px;
-     height: 15px;
-     display: inline-block;
-
+ /* Label */
+ .boxCreatAccount label {
+     color: black;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 25px;
+     margin-left: 5px;
+     text-shadow: 1px 2px 5px rgb(0, 199, 0), 1px 2px 0px rgba(0, 100, 0, 0.822);
 
  }
 
+ /* Input */
+ .boxCreatAccount input {
+     padding: 4px 3px 4px 7px;
+     border-radius: 20px;
+     width: 200px;
+     height: 15px;
+     border: 3px solid rgb(0, 63, 8);
+     box-shadow: 0 0px 10px 2px lightgreen;
+     margin-top: 4px;
+
+ }
+
+ .boxCreatAccount input:hover {
+     background-color: rgb(206, 206, 206);
+ }
+
+ /* Button */
  .button {
      display: flex;
      justify-content: center;
@@ -149,105 +177,89 @@
  }
 
  .button button {
-     background-image: linear-gradient(to top, rgb(0, 233, 0), rgb(2, 187, 2), green);
+     background-image: linear-gradient(to right, black, rgb(0, 87, 0), black);
      border-radius: 20px;
      margin-top: 20px;
      padding: 5px 40px;
-     border: 4px solid black;
-     box-shadow: 0 1px 8px 3px rgb(0, 0, 0), inset 0 1px 8px 3px rgb(11, 95, 0);
+     border: 2px solid rgba(0, 255, 0, 0.918);
+     box-shadow: 0 1px 8px 3px rgb(24, 119, 0);
+     text-shadow: 1px 2px 5px rgb(0, 255, 0), 1px 1px 0px rgba(0, 100, 0, 0.822);
      box-sizing: border-box;
  }
 
  .button button:hover {
-     background-image: linear-gradient(to top, rgb(0, 82, 0), rgb(0, 100, 0), rgb(0, 65, 0));
+     background-image: linear-gradient(to bottom, rgb(0, 87, 0), black, rgb(0, 87, 0));
      color: white;
+     text-shadow: 1px 2px 5px rgb(0, 255, 0), 1px 2px 0px rgba(0, 87, 0, 0.822);
  }
 
 
-
-
- /* Criar conta */
- h2#creatAccTitle {
-     display: flex;
-     justify-content: center;
+ /* Form */
+ .cardFormSet {
+     display: none;
+     background-color: black;
+     border-radius: 50px;
+     width: 300px;
+     height: 330px;
+     border: 3px solid rgb(0, 255, 0);
+     box-sizing: border-box;
+     margin-top: 100px;
  }
 
- .boxCreatAccount label {
-     color: black;
+ /* Card Title */
+ .cardTitle {
+     color: white;
      font-family: Arial, Helvetica, sans-serif;
      font-size: 30px;
-     margin-left: 5px;
      text-shadow: 1px 2px 5px rgb(0, 199, 0), 1px 2px 0px rgba(0, 100, 0, 0.822);
+     text-align: center;
+ }
+
+ .cardFormSet h2 {
+     cursor: default;
+ }
+
+ /* Pág Class - End */
+ /* Card Inicial */
+ #initialCardInfo {
+     display: block;
+     width: 350px;
+     height: 520px;
 
  }
 
- .boxCreatAccount input {
-     padding: 4px 3px 4px 7px;
-     border-radius: 20px;
-     width: 375px;
-     height: 17px;
-     border: 3px solid rgb(0, 63, 8);
-     box-shadow: 0 3px 10px 5px lightgreen;
-     margin-top: 4px;
-
- }
-
- .boxCreatAccount input:hover {
-     background-color: rgba(128, 128, 128, 0.212);
- }
-
-
- .boxCreatAccount {
-     margin: 10px 50px 10px 25px;
-     position: relative;
-
-
- }
-
- /* .helpIcon {
-     width: 20px;
-     height: 20px;
-     background-color: white;
-     position: absolute;
-     left: 50%;
-     bottom: -60px;
-     border-radius: 20px;
-     border: 3px solid black;
- } */
-
- .button1 {
-     background-image: linear-gradient(to top, rgb(0, 233, 0), rgb(2, 187, 2), green);
-     border-radius: 20px;
-     margin-top: 20px;
-     padding: 5px 40px;
-     border: 4px solid black;
-     box-shadow: 0 1px 8px 3px rgb(0, 0, 0), inset 0 1px 8px 3px rgb(11, 95, 0);
-     box-sizing: border-box;
- }
-
- .button1 a {
-     color: rgb(243, 243, 243);
-     text-decoration: none;
-     text-shadow: 1px 2px 1px black;
-     width: 100%;
-     border-radius: 20px;
+ #initialCardInfo h2,
+ #initialCardInfo h3 {
+     color: white;
      font-family: Arial, Helvetica, sans-serif;
-     box-sizing: border-box;
+     font-size: 25px;
 
+     text-shadow: 1px 2px 5px rgb(0, 199, 0), 1px 2px 0px rgba(0, 100, 0, 0.822);
+     text-align: center;
  }
 
- .button1 a:hover {
+ #initialCardInfo p {
      color: black;
-     background-image: linear-gradient(to top, rgb(0, 180, 0), rgb(0, 170, 0), rgb(0, 194, 0));
-     box-shadow: inset 0 1px 8px 3px rgb(11, 95, 0);
-     text-shadow: 1px 1px 1px rgb(0, 0, 0);
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 20px;
+     margin-left: 15px;
+     margin-right: 15px;
+     text-shadow: 1px 2px 5px rgb(0, 199, 0), 1px 2px 0px rgba(0, 100, 0, 0.822);
  }
 
- #creatAccButtonDiv {
-     display: flex;
-     justify-content: center;
+ p#clientInfo {
+     text-align: center;
+     font-size: 13px;
  }
 
+ /* Login */
+
+ /* Criar conta */
+ #creatAccForm {
+     height: 550px;
+ }
+
+ /*  */
  .redAlertMesssage {
      color: red;
      text-shadow: 1px 1px 1px black;
