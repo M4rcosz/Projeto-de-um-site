@@ -29,6 +29,7 @@ loginChoice.style.display = "none";
 creatAccChoice.style.display = "none";
 // End
 
+// Mouse Hover - Start
 function mouseHoverColorChange(x) {
     x.addEventListener("mouseover", backColorChoiceButtonChangeMouseover, false);
     x.addEventListener("mouseout", backColorChoiceButtonChangeMouseout, false);
@@ -37,19 +38,14 @@ function mouseHoverColorChange(x) {
         x.style.backgroundColor = "rgb(33,33,33)"
     }
     function backColorChoiceButtonChangeMouseout() {
-        x.style.backgroundColor = "black"
+        if (backColorChoiceButton() === false) {
+            x.style.backgroundColor = "black"
+        }
     }
 }
-function loginBackColorChange() {
-    x = loginChoiceButton;
-    mouseHoverColorChange(x)
-}
-function creatAccBackColorChange() {
-    x = creatAccChoiceButton;
-    mouseHoverColorChange(x)
-}
-loginBackColorChange()
-creatAccBackColorChange()
+mouseHoverColorChange(loginChoiceButton)
+mouseHoverColorChange(creatAccChoiceButton)
+// End
 // Funções de display - Start
 function initialCardFunction() {
     if (loginChoice.style.display === "block" || creatAccChoice.style.display === "block") {
@@ -59,10 +55,14 @@ function initialCardFunction() {
         initialCard.style.display = "block";
     }
 }
-function choiceButtonLogin() {
+function choiceButtonLogin(f) {
     x = loginChoice;
     y = loginChoiceButton;
     z = creatAccChoiceButton;
+    if (f === 1) {
+        x.style.display = 'none';
+        return
+    }
     if (x.style.display === 'none') {
         x.style.display = 'block';
         creatAccChoice.style.display = "none"
@@ -74,10 +74,14 @@ function choiceButtonLogin() {
     initialCardFunction()
     backColorChoiceButton()
 }
-function choiceButtonCreatAcc() {
+function choiceButtonCreatAcc(f) {
     x = creatAccChoice;
     y = creatAccChoiceButton;
     z = loginChoiceButton;
+    if (f === 1) {
+        x.style.display = 'none';
+        return
+    }
     if (x.style.display === "none") {
         x.style.display = "block";
         loginChoice.style.display = "none"
@@ -90,12 +94,16 @@ function choiceButtonCreatAcc() {
 
 }
 //End
+choiceButtonLogin(1)
+choiceButtonCreatAcc(1)
 function backColorChoiceButton() {
     if (x.style.display === 'none') {
         y.style.backgroundColor = "black"
+        return false
     }
     else if (x.style.display = "block") {
         y.style.backgroundColor = "rgb(33,33,33)"
         z.style.backgroundColor = "black"
+        return true
     }
 }
