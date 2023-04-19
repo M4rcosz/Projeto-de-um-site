@@ -90,6 +90,10 @@ function backColorChoiceButton() {
 }
 // End
 
+function nextPag() {
+    window.location.href = "pag2.html"
+}
+
 function verificadorCriarConta() {
     let password = document.getElementById("creatAccPassword").value;
     let passwordConfirmation = document.getElementById("passwordConfirmation").value;
